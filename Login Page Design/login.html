@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form" id="loginform" onsubmit="return validateForm()"">
+        <h1>Login Page</h1>
+
+        <input type="text" placeholder="Username:" required /><br /><br />
+        <input type="password" placeholder="Password:" required /> <br /><br />
+        <div id="password-strength" class="strength-bar"></div>
+        <div id="password-message"></div>
+        <input type="checkbox" name="remember" id="remember" />Remember Me <br /><br />
+        <button class="">Login</button>
+         <p id="errorMessage" style="color:red; display:none;">Please fill in both fields!</p>
+      </form>
+    </div>
+     <script src="script.js"></script>
+  </body>
+</html>
